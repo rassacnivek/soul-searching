@@ -4,16 +4,16 @@ import GlobalLoader from '@/components/Global/GlobalLoader.vue';
 
 const isLoaderVisible = ref(true);
 
-setTimeout(() => isLoaderVisible.value = false, 2200)
+setTimeout(() => isLoaderVisible.value = false, 2200);
 </script>
 
 <template>
   <VApp>
     <GlobalLoader v-if="isLoaderVisible" />
-    <AppHeader v-if="!isLoaderVisible"/>
+    <AppHeader v-if="!isLoaderVisible" />
 
     <VMain v-if="!isLoaderVisible">
-      <router-view/>
+      <router-view />
     </VMain>
   </VApp>
 </template>
@@ -31,14 +31,6 @@ setTimeout(() => isLoaderVisible.value = false, 2200)
 @font-face {
   font-family: "glorifyregular";
   src: url("../assets/fonts/glorify_regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: "glorifymedium";
-  src: url("../assets/fonts/glorify_medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap
@@ -82,100 +74,6 @@ setTimeout(() => isLoaderVisible.value = false, 2200)
   }
 }
 
-@keyframes line {
-  0% {
-    width: 0
-  }
-
-  100% {
-    width: 100%
-  }
-}
-
-@keyframes reavel {
-  100% {
-    margin-top: 0
-  }
-}
-
-@keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0)
-  }
-
-  40% {
-    transform: translateY(-30px)
-  }
-
-  60% {
-    transform: translateY(-15px)
-  }
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0)
-  }
-}
-
-@keyframes fade-in-anim {
-  100% {
-    width: 85px;
-    opacity: 1;
-    filter: blur(0)
-  }
-}
-
-@keyframes animateCloud {
-  0% {
-    left: 80%
-  }
-
-  100% {
-    left: -10%
-  }
-}
-
-@keyframes animateCloud2 {
-  0% {
-    left: 20%;
-    opacity: 1
-  }
-
-  90% {
-    left: 0%;
-    opacity: 1
-  }
-
-  100% {
-    left: -10%;
-    opacity: 0
-  }
-}
-
-@keyframes animateCloud3 {
-  0% {
-    left: 50%;
-    opacity: 1
-  }
-
-  90% {
-    left: 0%;
-    opacity: 1
-  }
-
-  100% {
-    left: -10%;
-    opacity: 0
-  }
-}
-
 @keyframes menubgmoving {
   0% {
     background-position: center bottom
@@ -204,18 +102,6 @@ setTimeout(() => isLoaderVisible.value = false, 2200)
   }
 }
 
-@keyframes mouse {
-  from {
-    opacity: 1;
-    top: 7px
-  }
-
-  to {
-    opacity: 0;
-    top: 15px
-  }
-}
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 153, 0, .4)
@@ -230,31 +116,6 @@ setTimeout(() => isLoaderVisible.value = false, 2200)
   }
 }
 
-@keyframes reveal {
-  0% {
-    transform: translate(0, 100%)
-  }
-
-  100% {
-    transform: translate(0, 0)
-  }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0
-}
-
-input[type=number] {
-  appearance: textfield;
-  -moz-appearance: textfield;
-}
-
-body {
-  font-family: "satoshiregular";
-}
-
 html,
 body {
   height: 100%;
@@ -265,9 +126,11 @@ html {
   scroll-behavior: smooth
 }
 
-input,
+body {
+  font-family: "satoshiregular";
+}
+
 button,
-input:focus,
 button:focus {
   outline: none
 }
@@ -277,62 +140,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box
-}
-
-input,
-button,
-input:focus,
-button:focus {
-  outline: none
-}
-
-.text-center {
-  text-align: center
-}
-
-.container {
-  padding: 0 32px;
-  margin: 0 auto;
-  width: 100%
-}
-
-@media(min-width: 768px) {
-  .container {
-    padding: 0 72px
-  }
-}
-
-@media(min-width: 834px) {
-  .container {
-    padding: 0 72px
-  }
-}
-
-@media(min-width: 992px) {
-  .container {
-    max-width: 840px;
-    padding: 0
-  }
-}
-
-@media(min-width: 1080px) {
-  .container {
-    max-width: 960px;
-    padding: 0
-  }
-}
-
-@media(min-width: 1400px) {
-  .container {
-    max-width: 1080px
-  }
-}
-
-@media(min-width: 1600px) {
-  .container {
-    max-width: 1360px;
-    padding: 0
-  }
 }
 
 .desktop {
@@ -349,48 +156,26 @@ button:focus {
   }
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
-}
+.text_wrap {
+  padding: 20px 48px;
 
-.js-replace--reverse {
-  .menu-icon__line {
-    background-color: rgb(var(--v-black));
-  }
+  .text {
+    font-family: "satoshiregular";
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
 
-  .js-replace__item {
-    transform: translateY(calc(var(--replace-offset-2) * 1));
-  }
-
-  .js-replace__content {
-    transform: translateY(calc(var(--replace-offset-2) * -1));
-  }
-
-  .js-replace__item--active {
-    transform: translateY(calc(var(--replace-offset) * 1));
-
-    .js-replace__content {
-      transform: translateY(calc(var(--replace-offset) * -1));
+    &:not(:last-child) {
+      padding-bottom: 32px;
     }
   }
 }
 
-.js-replace__item {
-  transform: translateY(calc(var(--replace-offset) * 1));
+.bold {
+  font-family: "satoshimedium" !important;
 }
 
-.js-replace__content {
-  border: 1px solid rgba(0, 0, 0, 0);
-  will-change: transform;
-  transform: translateY(calc(var(--replace-offset) * -1));
-}
-
-.js-replace__item--active {
-  transform: translateY(calc(var(--replace-offset-2) * 1));
-
-  .js-replace__content {
-    transform: translateY(calc(var(--replace-offset-2) * -1));
-  }
+.light {
+  font-family: "satoshilight" !important;
 }
 </style>

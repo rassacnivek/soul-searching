@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="social">
+  <div class="social d-flex align-center justify-space-between">
     <a :href="props.href" target="_blank" class="mobile">{{ props.mobile }}</a>
     <a :href="props.href" target="_blank" class="desktop">{{ props.desktop }}</a>
   </div>
@@ -17,9 +17,6 @@ const props = defineProps({
 .social {
   width: 100%;
   padding: 40px 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   a {
     text-decoration: none;

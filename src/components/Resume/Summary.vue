@@ -27,49 +27,11 @@ const texts = [
 <template>
   <VContainer>
     <section id="summary">
-      <div class="summary_text_wrap">
+      <div class="text_wrap">
         <BasicText v-for="text in texts" :key="text.delay"
-          :class="`summary_text ${text.hasOwnProperty('class') ? text.class : ''}`" :initial="initialOptions"
+          :class="`text ${text.hasOwnProperty('class') ? text.class : ''}`" :initial="initialOptions"
           :enter="getEnterOptions(text.delay)" :text="text.text" />
       </div>
     </section>
   </VContainer>
 </template>
-
-<style lang="scss">
-#summary {
-  .summary_text_wrap {
-    padding: 20px 48px 0px 48px;
-
-    .summary_text {
-      font-family: "satoshiregular";
-      font-size: 20px;
-      line-height: 44px;
-      letter-spacing: -0.02em;
-
-      &.bold {
-        font-family: "satoshimedium";
-      }
-
-      &:not(:last-child) {
-        padding-bottom: 32px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #summary {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  #summary {
-    .summary_text_wrap {
-      padding-left: 128px;
-      padding-right: 128px;
-    }
-  }
-}
-</style>

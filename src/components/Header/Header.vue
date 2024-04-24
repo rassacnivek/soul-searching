@@ -6,7 +6,7 @@ const { toggleNavState } = useNavStore();
 
 <template>
   <header id="header" class="headerMenu first activate">
-    <div class="header__logo js-replace js-replace--reverse">
+    <div class="header__logo">
       <button class="menu menu-icon" @click="toggleNavState">
         <span class="menu-icon__line menu-icon__line-top"></span>
         <span class="menu-icon__line menu-icon__line-bottom"></span>
@@ -31,6 +31,12 @@ const { toggleNavState } = useNavStore();
   &.activate {
     opacity: 1;
     visibility: visible;
+  }
+
+  .header__logo {
+    .menu-icon__line {
+      background-color: rgb(var(--v-black));
+    }
   }
 
   .menu {

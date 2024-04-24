@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <a class="contact-btn activate" href="mailto:kevin95cassar@gmail.com">
-    <span>
+  <a class="contact-btn activate d-flex align-center justify-center" href="mailto:kevin95cassar@gmail.com">
+    <span class="d-flex align-center justify-center">
       <img src="../../assets/img/mail.svg">
     </span>
     <img class="contact-text" src="../../assets/img/contact.svg">
@@ -14,9 +14,6 @@
 .contact-btn {
   width: 120px;
   height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: -100px auto 40px;
   position: relative;
   cursor: pointer;
@@ -39,9 +36,6 @@
   span {
     width: 85px;
     height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: rgb(var(--v-yellow));
     border-radius: 50%;
     -webkit-border-radius: 50%;

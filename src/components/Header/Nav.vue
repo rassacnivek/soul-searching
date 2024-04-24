@@ -26,7 +26,7 @@ const socials = [
 <template>
   <nav class="nav">
     <div class="nav__content">
-      <section class="main_menu">
+      <section class="main_menu d-flex flex-column justify-space-between align-flex-start">
         <div class="menu_link_wrap">
           <ul class="menu_links">
             <MenuLink v-for="link in links" :key="link.href" :href="link.href" :label="link.label" />
@@ -150,10 +150,6 @@ const socials = [
   opacity: 0;
   height: 0;
   visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   transition-delay: 250ms;
 
   .menu_link_wrap {

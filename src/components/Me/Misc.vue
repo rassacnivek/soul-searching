@@ -50,9 +50,9 @@ const texts = [
 <template>
   <VContainer>
     <section id="misc">
-      <div class="misc_text_wrap">
+      <div class="text_wrap">
         <BasicText v-for="text in texts" :key="text.delay"
-          :class="`misc_text ${text.hasOwnProperty('class') ? text.class : ''}`" :initial="initialOptions"
+          :class="`text ${text.hasOwnProperty('class') ? text.class : ''}`" :initial="initialOptions"
           :enter="getEnterOptions(text.delay)" :text="text.text" />
       </div>
     </section>
@@ -60,40 +60,7 @@ const texts = [
 </template>
 
 <style lang="scss">
-#misc {
-  .misc_text_wrap {
-    padding: 20px 48px 20px 48px;
-
-    .misc_text {
-      font-family: "satoshiregular";
-      font-size: 20px;
-      line-height: 44px;
-      letter-spacing: -0.02em;
-
-      &:not(:last-child) {
-        padding-bottom: 32px;
-      }
-
-      &.bold {
-        font-family: "satoshimedium";
-        padding-bottom:0px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #misc {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  #misc {
-    .misc_text_wrap {
-      padding-left: 128px;
-      padding-right: 128px;
-    }
-  }
+#misc .text_wrap .text.bold {
+  padding-bottom: 0px;
 }
 </style>

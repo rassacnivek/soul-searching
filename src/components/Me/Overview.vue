@@ -29,8 +29,8 @@ const texts = [
           <h1>WORLD</h1>
         </div>
       </div>
-      <div class="overview_text_wrap">
-        <BasicText v-for="text in texts" :key="text.delay" class="overview_text" :initial="initialOptions"
+      <div class="text_wrap">
+        <BasicText v-for="text in texts" :key="text.delay" class="text" :initial="initialOptions"
           :enter="getEnterOptions(text.delay)" :text="text.text" />
       </div>
     </section>
@@ -64,19 +64,8 @@ const texts = [
     }
   }
 
-  .overview_text_wrap {
+  .text_wrap {
     padding: 150px 48px 20px 48px;
-
-    .overview_text {
-      font-family: "satoshiregular";
-      font-size: 20px;
-      line-height: 44px;
-      letter-spacing: -0.02em;
-
-      &:not(:last-child) {
-        padding-bottom: 32px;
-      }
-    }
   }
 }
 
@@ -99,7 +88,7 @@ const texts = [
       }
     }
 
-    .overview_text_wrap {
+    .text_wrap {
       padding-top: 148px;
     }
   }
@@ -146,7 +135,7 @@ const texts = [
       }
     }
 
-    .overview_text_wrap {
+    .text_wrap {
       padding-top: 62px;
     }
   }
@@ -168,11 +157,6 @@ const texts = [
           letter-spacing: -0.004em;
         }
       }
-    }
-
-    .overview_text_wrap {
-      padding-left: 128px;
-      padding-right: 128px;
     }
   }
 }
@@ -196,7 +180,7 @@ const texts = [
       }
     }
 
-    .overview_text_wrap {
+    .text_wrap {
       padding-top: 26px;
     }
   }

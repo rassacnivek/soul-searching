@@ -17,11 +17,11 @@ const props = defineProps({
 
 <template>
   <div v-if="!props.item.hasOwnProperty('children')"
-    :class="`experiences_text ${props.item.hasOwnProperty('class') ? props.item.class : ''}`" v-motion
+    :class="`text ${props.item.hasOwnProperty('class') ? props.item.class : ''}`" v-motion
     :initial="props.initial" :enter="props.enter">
     <span>{{ props.item.text }}</span>
   </div>
-  <div v-else class="experiences_text_child">
+  <div v-else class="text_child">
     <p class="bold">
       {{ props.item.text }}
     </p>
@@ -70,27 +70,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-.bold {
-  font-family: "satoshimedium";
-}
-
-.light {
-  font-family: "satoshilight";
-}
-
-.experiences_text {
-  font-family: "satoshiregular";
-  font-size: 20px;
-  line-height: 44px;
-  letter-spacing: -0.02em;
-
-
-  &:not(:last-child) {
-    padding-bottom: 32px;
-  }
-}
-
-.experiences_text_child {
+.text_child {
   font-family: "satoshiregular";
   font-size: 18px;
 

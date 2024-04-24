@@ -14,5 +14,3 @@ const route = useRoute();
     <a :href="props.href">{{ props.label }}</a>
   </li>
 </template>
-
-<style lang="scss"></style>

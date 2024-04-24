@@ -1,5 +1,4 @@
 <script setup>
-import BasicText from '@/components/Global/BasicText.vue';
 import ExperiencesItem from './ExperiencesItem.vue';
 
 const initialOptions = { opacity: 0, y: 100 };
@@ -111,48 +110,10 @@ const texts = [
 <template>
   <VContainer>
     <section id="experiences">
-      <div class="experiences_text_wrap">
+      <div class="text_wrap">
         <ExperiencesItem v-for="text in texts" :key="text.delay" :initial="initialOptions"
           :enter="getEnterOptions(text.delay)" :item="text" />
       </div>
     </section>
   </VContainer>
 </template>
-
-<style lang="scss">
-#experiences {
-  .experiences_text_wrap {
-    padding: 20px 48px 20px 48px;
-
-    .experiences_text {
-      font-family: "satoshiregular";
-      font-size: 20px;
-      line-height: 44px;
-      letter-spacing: -0.02em;
-
-      &.bold {
-        font-family: "satoshimedium";
-      }
-
-      &:not(:last-child) {
-        padding-bottom: 32px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #experiences {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  #experiences {
-    .experiences_text_wrap {
-      padding-left: 128px;
-      padding-right: 128px;
-    }
-  }
-}
-</style>

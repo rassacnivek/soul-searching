@@ -4,7 +4,8 @@ import GlobalLoader from '@/assets/img/global-loader.json'
 </script>
 
 <template>
-  <div v-motion :initial="{ opacity: 1 }" :enter="{ opacity: 0 }" :delay="1800" id="global-loader">
+  <div v-motion :initial="{ opacity: 1 }" :enter="{ opacity: 0 }" :delay="1800" id="global-loader"
+    class="d-flex align-center justify-center">
     <div id="loader">
       <Vue3Lottie autoplay :animation-data="GlobalLoader" />
     </div>
@@ -20,9 +21,6 @@ import GlobalLoader from '@/assets/img/global-loader.json'
   bottom: 0;
   background: rgb(var(--v-background));
   z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   #loader {
     width: 140px;
