@@ -2,7 +2,6 @@
 import ExperiencesItem from './ExperiencesItem.vue';
 
 const initialOptions = { opacity: 0, y: 100 };
-const getEnterOptions = (i) => ({ opacity: 1, y: 0, transition: { type: 'spring', stiffness: '100', delay: 100 * i } });
 const texts = [
   {
     text: 'Experiences',
@@ -11,8 +10,8 @@ const texts = [
   },
   {
     text: 'Full-stack engineer, Orange Cyberdefense',
-    delay: 7,
     date: 'October 2021 — Now, Consultant',
+    delay: 7,
     children: {
       tasks: [
         'Referent of 2 projects',
@@ -47,8 +46,8 @@ const texts = [
   },
   {
     text: 'Full-stack engineer, Run Services',
-    delay: 8,
     date: 'August 2020 — August 2021, Apprenticeship',
+    delay: 14,
     children: {
       tasks: [
         'Update of pages concerning SEO and new rules concerning RGPD and personal data',
@@ -79,8 +78,8 @@ const texts = [
   },
   {
     text: 'Fullstack engineer, Trèfle Applications',
-    delay: 9,
     date: 'August 2018 — August 2020, Apprenticeship',
+    delay: 21,
     children: {
       tasks: [
         'Fullstack development of an website mixing an homemade CRM and ERP',
@@ -111,8 +110,8 @@ const texts = [
   <VContainer>
     <section id="experiences">
       <div class="text_wrap">
-        <ExperiencesItem v-for="text in texts" :key="text.delay" :initial="initialOptions"
-          :enter="getEnterOptions(text.delay)" :item="text" />
+        <ExperiencesItem v-for="text in texts" :key="text.delay" :initial="initialOptions" :item="text"
+          :child-start-delay="7" />
       </div>
     </section>
   </VContainer>
