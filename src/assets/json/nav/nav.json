@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "label": "Me",
+      "href": "/"
+    },
+    {
+      "label": "Resume",
+      "href": "/resume"
+    }
+  ],
+  "socials": [
+    {
+      "href": "https://www.linkedin.com/in/k%C3%A9vin-cassar/",
+      "desktop": "LINKEDIN",
+      "mobile": "IN"
+    },
+    {
+      "href": "https://www.github.com/rassacnivek/",
+      "desktop": "GITHUB",
+      "mobile": "GH"
+    }
+  ]
+}

@@ -2,25 +2,7 @@
 import ContactMe from '../Global/ContactMe.vue';
 import MenuLink from '../Global/MenuLink.vue';
 import SocialLink from '../Global/SocialLink.vue';
-
-const links = [
-  {
-    label: 'Me',
-    href: '/',
-  },
-  {
-    label: 'Resume',
-    href: '/resume',
-  },
-];
-
-const socials = [
-  {
-    href: 'https://www.linkedin.com/in/k%C3%A9vin-cassar/',
-    desktop: 'LINKEDIN',
-    mobile: 'IN',
-  }
-];
+import { links, socials } from '@/assets/json/nav/nav.json'
 </script>
 
 <template>
@@ -80,7 +62,6 @@ const socials = [
     width: 100%;
     text-align: center;
     font-weight: 200;
-    cursor: pointer;
 
     &:before,
     &:after {
@@ -251,8 +232,11 @@ const socials = [
   bottom: 0;
   border-top: solid 1px rgba(255, 255, 255, .2);
   z-index: 1;
+  display: flex;
+  gap: 50px;
 
   .crafted {
+    margin-left: auto;
     font-size: 18px;
     color: rgb(var(--v-white));
     font-family: "satoshimedium";
