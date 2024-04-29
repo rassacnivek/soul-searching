@@ -5,7 +5,3 @@
     </VMain>
   </VApp>
 </template>
-
-<script setup>
-  //
-</script>
