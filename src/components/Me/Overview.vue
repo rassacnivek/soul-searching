@@ -1,36 +1,31 @@
 <script setup>
 import BasicText from '@/components/Global/BasicText.vue';
-const initialOptions = { opacity: 0, y: 100 };
-const getEnterOptions = (i) => ({ opacity: 1, y: 0, transition: { type: 'spring', stiffness: '100', delay: 100 * i } });
-const texts = [
-  {
-    text: 'I am a fullstack engineer with a perfectionist\'s sense.',
-    delay: 2,
-  },
-  {
-    text: 'Since my childhood, I have always been passionate about computers and IT, and this passion has only grown over the years. On a daily basis, I am constantly seeking new ways to develop, whether it\'s refining frontend designs on websites like Dribbble, or staying updated on frontend and backend development through platforms like React Hebdo or the GitHub trending section.',
-    delay: 3,
-  },
-  {
-    text: 'I am always on the lookout for ways to improve in all aspects of life, whether it\'s in gaming, work, drums or even sports.',
-    delay: 4,
+import overviewTexts from '@/assets/json/me/overview.json';
+import initialOptions from '@/assets/json/motion/initialOptions.json';
+import enterOptions from '@/assets/json/motion/enterOptions.json';
+
+const getEnterOptions = (i) => ({
+  ...enterOptions.basic,
+  transition: {
+    ...enterOptions.basic.transition,
+    delay: 100 * i,
   }
-];
+});
 </script>
 
 <template>
   <VContainer>
     <section id="overview">
       <div class="overview_title_wrap">
-        <div class="overview_title" v-motion :initial="initialOptions" :enter="getEnterOptions(0)">
+        <div class="overview_title" v-motion :initial="initialOptions.basic" :enter="getEnterOptions(0)">
           <h2>HELLO</h2>
         </div>
-        <div class="overview_title" v-motion :initial="initialOptions" :enter="getEnterOptions(1)">
+        <div class="overview_title" v-motion :initial="initialOptions.basic" :enter="getEnterOptions(1)">
           <h1>WORLD</h1>
         </div>
       </div>
       <div class="text_wrap">
-        <BasicText v-for="text in texts" :key="text.delay" class="text" :initial="initialOptions"
+        <BasicText v-for="text in overviewTexts" :key="text.delay" class="text" :initial="initialOptions.basic"
           :enter="getEnterOptions(text.delay)" :text="text.text" />
       </div>
     </section>

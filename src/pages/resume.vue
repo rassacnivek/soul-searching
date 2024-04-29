@@ -1,17 +1,18 @@
 <script setup>
 import Summary from '@/components/Resume/Summary.vue';
+import resumeTexts from '@/assets/json/resume/resume.json';
 import Experiences from '@/components/Resume/Experiences/Experiences.vue';
 import BasicText from '@/components/Global/BasicText.vue';
+import initialOptions from '@/assets/json/motion/initialOptions.json';
+import enterOptions from '@/assets/json/motion/enterOptions.json';
 
-const initialOptions = { opacity: 0, y: 100 };
-const getEnterOptions = (i) => ({ opacity: 1, y: 0, transition: { type: 'spring', stiffness: '100', delay: 100 * i } });
-
-const texts = [
-  {
-    text: 'I am currently employed as a full-stack developer at Orange Cyberdefense, a subsidiary of the Orange company, specializing in cybersecurity.',
-    delay: 1,
-  },
-];
+const getEnterOptions = (i) => ({
+  ...enterOptions.basic,
+  transition: {
+    ...enterOptions.basic.transition,
+    delay: 100 * i,
+  }
+});
 </script>
 
 <template>
@@ -19,13 +20,13 @@ const texts = [
     <VContainer>
       <section id="resume">
         <div class="resume_title_wrap">
-          <div class="resume_title" v-motion :initial="initialOptions" :enter="getEnterOptions(0)">
+          <div class="resume_title" v-motion :initial="initialOptions.basic" :enter="getEnterOptions(0)">
             <h1>Resume</h1>
           </div>
         </div>
         <div class="text_wrap">
-          <BasicText v-for="text in texts" :key="text.delay"
-            :class="`text ${text.hasOwnProperty('class') ? text.class : ''}`" :initial="initialOptions"
+          <BasicText v-for="text in resumeTexts" :key="text.delay"
+            :class="`text ${text.hasOwnProperty('class') ? text.class : ''}`" :initial="initialOptions.basic"
             :enter="getEnterOptions(text.delay)" :text="text.text" />
         </div>
       </section>
