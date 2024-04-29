@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Experiences",
+    "delay": 6,
+    "class": "bold"
+  },
+  {
+    "text": "Full-stack engineer, Orange Cyberdefense",
+    "date": "October 2021 — Now, Consultant",
+    "delay": 7,
+    "children": {
+      "tasks": {
+        "texts": [
+          "Referent of 2 projects",
+          "Creation from scratch of a data parsing API and its database",
+          "Major Laravel upgrade migration",
+          "Complete frontend revamp",
+          "Code review",
+          "Realization of non-regression tests",
+          "Continuous integration",
+          "Writing of documentations",
+          "Reporting of anomalies",
+          "Code refactoring"
+        ],
+        "delay": 8
+      },
+      "stacks": {
+        "delay": 9,
+        "front": {
+          "texts": [
+            "VueJS 2 (Options API) with Vuex",
+            "VueJS 3 (Composition API) with Pinia",
+            "Scss",
+            "Bootstrap Vue",
+            "Vuetify"
+          ],
+          "delay": 10
+        },
+        "back": {
+          "texts": ["PHP 7 & 8", "Laravel 8 & 10"],
+          "delay": 11
+        },
+        "system": {
+          "texts": ["Linux", "Docker"],
+          "delay": 12
+        }
+      }
+    }
+  },
+  {
+    "text": "Full-stack engineer, Run Services",
+    "date": "August 2020 — August 2021, Apprenticeship",
+    "delay": 13,
+    "children": {
+      "tasks": {
+        "texts": [
+          "Update of pages concerning SEO and new rules concerning RGPD and personal data",
+          "Redesign of the APIs into distinct micro-services that can be reused on all sites",
+          "Redesign of the client form of AXA France websites",
+          "Realization of non-regression tests",
+          "Creation of data sets",
+          "Writing of documentations",
+          "Reporting of anomalies"
+        ],
+        "delay": 14
+      },
+      "stacks": {
+        "delay": 15,
+        "front": { "texts": ["ReactJS", "NextJS", "SASS"], "delay": 16 },
+        "back": {
+          "texts": ["PHP 7", "Symfony 5", "API Platform", "MySQL"],
+          "delay": 17
+        },
+        "system": { "texts": ["Docker"], "delay": 18 }
+      }
+    }
+  },
+  {
+    "text": "Fullstack engineer, Trèfle Applications",
+    "date": "August 2018 — August 2020, Apprenticeship",
+    "delay": 19,
+    "children": {
+      "tasks": {
+        "texts": [
+          "Fullstack development of an website mixing an homemade CRM and ERP",
+          "Code refactoring",
+          "Creation of an homemade MVC framework",
+          "Realization of developments from technical specifications of the project manager",
+          "Management of the implementation in acceptance, in pre-production and in production",
+          "Introduction of test sets",
+          "Reporting of anomalies"
+        ],
+        "delay": 20
+      },
+      "stacks": {
+        "delay": 21,
+        "front": { "texts": ["HTML5", "CSS3", "jQuery"], "delay": 22 },
+        "back": { "texts": ["PHP 5 & 7", "MySQL"], "delay": 23 }
+      }
+    }
+  }
+]

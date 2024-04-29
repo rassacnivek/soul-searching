@@ -1,0 +1,14 @@
+[
+  {
+    "text": "I have been coding in PHP for 7 years, including approximately 2 years with Symfony and 2 years with Laravel. Additionally, I have 2 years of experience with Vue 2 and 3, utilizing both Options and Composition API, and 1 year of experience with React.",
+    "delay": 5
+  },
+  {
+    "text": "When developing my websites, I consistently use SASS for styling applications, unless I am utilizing prebuilt components and classes like those offered by Vuetify.",
+    "delay": 6
+  },
+  {
+    "text": "Throughout my development process, I adhere to best practices and maintain clean code using ESLint and Prettier.",
+    "delay": 7
+  }
+]

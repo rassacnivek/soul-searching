@@ -1,0 +1,19 @@
+[
+  {
+    "text": "Summary",
+    "delay": 2,
+    "class": "bold"
+  },
+  {
+    "text": "I embarked on my developer journey with a 2-year apprenticeship as a full-stack developer at Trèfle Applications, a subsidiary of the Groupe Trèfle. My primary responsibility was maintaining the main internal website of the Groupe Trèfle, which integrated the functionalities of an Enterprise Resource Planning (ERP) and a Customer Relationship Management (CRM). Both systems were created and developed from scratch by Trèfle Applications.",
+    "delay": 3
+  },
+  {
+    "text": "Afterward, I embarked on a 1-year apprenticeship as a full-stack developer at Run Services, an insurance brokerage subsidiary of AXA. My primary mission was to modernize the API development process. I had the opportunity to completely overhaul the existing API system. It was noted that all Run Services websites utilized the same client form, thus I was tasked with standardizing their usage of a unified API. Additionally, I implemented web services alongside the API to handle specific information such as price calculations or customer file acceptance.",
+    "delay": 4
+  },
+  {
+    "text": "Finally, I had the opportunity to work at Solutec as a consultant for Orange Cyberdefense for the last two and a half years.",
+    "delay": 5
+  }
+]
