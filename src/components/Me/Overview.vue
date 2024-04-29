@@ -42,7 +42,7 @@ const getEnterOptions = (i) => ({
       text-align: center;
 
       h1 {
-        font-family: "glorifyregular";
+        font-family: glorifyregular;
         font-weight: 300;
         font-size: 70px;
         line-height: 72px;
@@ -50,7 +50,7 @@ const getEnterOptions = (i) => ({
       }
 
       h2 {
-        font-family: "glorifylight";
+        font-family: glorifyregular;
         font-weight: 400;
         font-size: 44px;
         line-height: 48px;

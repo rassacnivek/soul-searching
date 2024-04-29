@@ -155,7 +155,7 @@ import { links, socials } from '@/assets/json/nav/nav.json'
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: "glorifyregular";
+    font-family: glorifyregular;
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease;
@@ -239,7 +239,7 @@ import { links, socials } from '@/assets/json/nav/nav.json'
     margin-left: auto;
     font-size: 18px;
     color: rgb(var(--v-white));
-    font-family: "satoshimedium";
+    font-family: satoshimedium;
     position: relative;
     padding-right: 40px;
     visibility: hidden;

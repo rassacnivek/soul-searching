@@ -21,15 +21,7 @@ setTimeout(() => isLoaderVisible.value = false, 2200);
 
 <style lang="scss">
 @font-face {
-  font-family: "glorifylight";
-  src: url("../src/assets/fonts/glorify_light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: "glorifyregular";
+  font-family: glorifyregular;
   src: url("../assets/fonts/glorify_regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -37,7 +29,7 @@ setTimeout(() => isLoaderVisible.value = false, 2200);
 }
 
 @font-face {
-  font-family: "satoshilight";
+  font-family: satoshilight;
   src: url("../assets/fonts/satoshi_light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -45,7 +37,7 @@ setTimeout(() => isLoaderVisible.value = false, 2200);
 }
 
 @font-face {
-  font-family: "satoshiregular";
+  font-family: satoshiregular;
   src: url("../assets/fonts/satoshi_regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -53,7 +45,7 @@ setTimeout(() => isLoaderVisible.value = false, 2200);
 }
 
 @font-face {
-  font-family: "satoshimedium";
+  font-family: satoshimedium;
   src: url("../assets/fonts/satoshi_medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -61,7 +53,7 @@ setTimeout(() => isLoaderVisible.value = false, 2200);
 }
 
 @font-face {
-  font-family: "satoshibold";
+  font-family: satoshibold;
   src: url("../assets/fonts/satoshi_bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -127,7 +119,7 @@ html {
 }
 
 body {
-  font-family: "satoshiregular";
+  font-family: satoshiregular;
 }
 
 button,
@@ -160,7 +152,7 @@ body {
   padding: 20px 48px;
 
   .text {
-    font-family: "satoshiregular";
+    font-family: satoshiregular;
     font-size: 20px;
     line-height: 44px;
     letter-spacing: -0.02em;
@@ -172,10 +164,10 @@ body {
 }
 
 .bold {
-  font-family: "satoshimedium" !important;
+  font-family: satoshimedium !important;
 }
 
 .light {
-  font-family: "satoshilight" !important;
+  font-family: satoshilight !important;
 }
 </style>

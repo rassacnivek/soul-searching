@@ -83,7 +83,7 @@ const getEnterOptions = (i) => ({
 
 <style lang="scss">
 .text_child {
-  font-family: "satoshiregular";
+  font-family: satoshiregular;
   font-size: 18px;
 
   ul {

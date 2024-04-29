@@ -23,7 +23,7 @@ const props = defineProps({
     line-height: 24px;
     letter-spacing: 1px;
     color: rgb(var(--v-white));
-    font-family: "satoshibold";
+    font-family: satoshibold;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
